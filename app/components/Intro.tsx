@@ -33,9 +33,10 @@ export default function Intro() {
           <Image
             src="/jmt.jpeg"
             alt="Portrait of Joshua Miguel Tuan"
-            fill
             quality={80}
             className="object-cover"
+            placeholder="blur"
+            fill
           />
         </div>
         <div className="text-center lg:text-start">
