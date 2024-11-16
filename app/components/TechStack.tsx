@@ -80,6 +80,7 @@ type TechStackProps = {
   Icon: IconType;
   name: ReactNode;
 };
+
 function TechStack({ Icon, name }: TechStackProps) {
   return (
     <div className="flex items-center gap-2 rounded-full bg-stone-50 px-5 py-3 text-xs font-medium shadow-sm lg:text-sm">
@@ -88,4 +89,3 @@ function TechStack({ Icon, name }: TechStackProps) {
     </div>
   );
 }
-//
