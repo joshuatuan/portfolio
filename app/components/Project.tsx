@@ -1,12 +1,12 @@
 import { ArrowUpRightFromSquare, Code } from "lucide-react";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import { type ReactNode } from "react";
 
 type ProjectProps = {
   name: string;
   children: ReactNode;
   techStack: string[];
-  imageSrc: StaticImageData;
+  imageSrc: string;
   liveUrl: string;
   sourceCodeUrl: string;
 };
@@ -40,7 +40,8 @@ function Project({
       >
         <Image
           src={imageSrc}
-          placeholder="blur"
+          width={320}
+          height={176}
           quality={70}
           alt={`project ${name} screenshot`}
           className="h-44 w-80 rounded-2xl object-cover transition-transform duration-300 hover:scale-110 hover:object-center"
