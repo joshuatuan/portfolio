@@ -17,7 +17,7 @@ function ProjectList() {
           "Tailwind",
           "Responsive design",
         ]}
-        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/wildO/wildO2.png"
+        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/wildO2.png"
         liveUrl="https://the-wild-o-ruby.vercel.app/"
         sourceCodeUrl="https://github.com/joshuatuan/WildO/"
       >
@@ -38,7 +38,7 @@ function ProjectList() {
           "Supabase Auth",
           "Tailwind",
         ]}
-        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/popcorn/popcorn1.png"
+        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/popcorn1.png"
         liveUrl="https://popcan.vercel.app/"
         sourceCodeUrl="https://github.com/joshuatuan/popcan"
       >
@@ -53,7 +53,7 @@ function ProjectList() {
       <Project
         name="Quizzy"
         techStack={["React", "Typescript", "Tailwind", "Dark mode"]}
-        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/quizzy/quizzy1.png"
+        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/quizzy1.png"
         liveUrl="https://quizzy-lac-ten.vercel.app/"
         sourceCodeUrl="https://github.com/joshuatuan/quizzy"
       >
@@ -67,7 +67,7 @@ function ProjectList() {
       <Project
         name="PizzaHot"
         techStack={["React", "Redux", "Tailwind"]}
-        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/pizza/pizza2.png"
+        imageSrc="https://raw.githubusercontent.com/joshuatuan/portfolio/refs/heads/assets/images/pizza2.png"
         liveUrl="https://pizza-hot-seven.vercel.app/"
         sourceCodeUrl="https://github.com/joshuatuan/pizzaHot/"
       >
