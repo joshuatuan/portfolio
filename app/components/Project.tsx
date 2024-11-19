@@ -19,6 +19,17 @@ function Project({
   sourceCodeUrl,
   children,
 }: ProjectProps) {
+  const projectData = {
+    projectName: name,
+    techStack,
+    imageSrc: "link",
+    liveUrl,
+    sourceCodeUrl,
+    description: children,
+  };
+
+  console.log(JSON.stringify(projectData, null, 2));
+
   return (
     <div>
       {/*PROJECT IMAGE */}

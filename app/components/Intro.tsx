@@ -35,7 +35,6 @@ export default function Intro() {
             alt="Portrait of Joshua Miguel Tuan"
             quality={80}
             className="object-cover"
-            placeholder="blur"
             fill
           />
         </div>
