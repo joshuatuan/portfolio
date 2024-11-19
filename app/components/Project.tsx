@@ -1,15 +1,6 @@
 import { ArrowUpRightFromSquare, Code } from "lucide-react";
 import Image from "next/image";
-import { type ReactNode } from "react";
-
-type ProjectProps = {
-  name: string;
-  children: ReactNode;
-  techStack: string[];
-  imageSrc: string;
-  liveUrl: string;
-  sourceCodeUrl: string;
-};
+import { type Project as ProjectType } from "../types";
 
 function Project({
   name,
@@ -17,19 +8,8 @@ function Project({
   imageSrc,
   liveUrl,
   sourceCodeUrl,
-  children,
-}: ProjectProps) {
-  const projectData = {
-    projectName: name,
-    techStack,
-    imageSrc: "link",
-    liveUrl,
-    sourceCodeUrl,
-    description: children,
-  };
-
-  console.log(JSON.stringify(projectData, null, 2));
-
+  description,
+}: ProjectType) {
   return (
     <div>
       {/*PROJECT IMAGE */}
@@ -42,9 +22,9 @@ function Project({
           src={imageSrc}
           width={320}
           height={176}
-          quality={70}
+          quality={80}
           alt={`project ${name} screenshot`}
-          className="h-44 w-80 rounded-2xl object-cover transition-transform duration-300 hover:scale-110 hover:object-center"
+          className="rounded-2xl object-cover transition-transform duration-300 hover:scale-110 hover:object-center"
         />
       </a>
 
@@ -62,7 +42,7 @@ function Project({
           ))}
         </div>
 
-        <p className="mb-2 max-w-2xl leading-9 text-stone-700">{children}</p>
+        <p className="mb-2 max-w-2xl leading-9 text-stone-700">{description}</p>
 
         <div className="flex gap-6 text-base font-medium text-stone-700">
           <a

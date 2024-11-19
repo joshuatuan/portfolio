@@ -1,5 +1,10 @@
+export type Intro = {
+  introText: string;
+  profilePicUrl: string;
+};
+
 export type Project = {
-  projectName: string;
+  name: string;
   techStack: string[];
   imageSrc: string;
   liveUrl: string;
