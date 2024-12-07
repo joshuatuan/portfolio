@@ -46,7 +46,7 @@ function Project({
 
         <div className="flex gap-6 text-base font-medium text-stone-700">
           <a
-            className="flex items-center gap-1 rounded-2xl px-3 py-2 text-stone-700 transition-colors duration-200 hover:bg-stone-100 hover:text-black hover:shadow-sm"
+            className="flex items-center gap-1 rounded-2xl px-3 py-2 text-stone-700 transition-colors duration-200 hover:bg-gray-200 hover:text-black hover:shadow-sm"
             target="_blank"
             href={liveUrl}
           >
@@ -54,7 +54,7 @@ function Project({
             <ArrowUpRightFromSquare className="h-5" />
           </a>
           <a
-            className="flex items-center gap-1 rounded-2xl px-3 py-2 text-stone-700 transition-colors duration-200 hover:bg-stone-100 hover:text-black hover:shadow-sm"
+            className="flex items-center gap-1 rounded-2xl px-3 py-2 text-stone-700 transition-colors duration-200 hover:bg-gray-200 hover:text-black hover:shadow-sm"
             target="_blank"
             href={sourceCodeUrl}
           >

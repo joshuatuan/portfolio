@@ -21,7 +21,11 @@ export default async function Page() {
   const data = await getPortfolioData();
 
   if (!data) {
-    return <div>Failed to load portfolio data. Please try again later.</div>;
+    return (
+      <div className="flex min-h-screen items-center justify-center p-10 text-center md:text-xl">
+        Failed to load portfolio data 😔 Please try again later
+      </div>
+    );
   }
 
   return (
