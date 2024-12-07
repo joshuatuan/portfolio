@@ -24,7 +24,7 @@ export default function Intro({ introData }: IntroProps) {
         </div>
         <div className="text-center lg:text-start">
           <div className="mb-8 md:mb-8">
-            <p className="mb-2 text-2xl font-[450] md:mb-4 lg:text-3xl">
+            <p className="mb-2 text-2xl font-bold md:mb-4 lg:text-3xl">
               Hi there 👋 I am
             </p>
             <h1 className="mb-8 text-4xl font-bold md:mb-6 lg:mb-9 lg:text-5xl xl:text-6xl">
