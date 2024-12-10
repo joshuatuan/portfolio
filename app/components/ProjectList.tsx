@@ -5,7 +5,7 @@ type ProjectListProps = {
   projects: ProjectType[];
 };
 
-function ProjectList({ projects }: ProjectListProps) {
+export default function ProjectList({ projects }: ProjectListProps) {
   return (
     <div className="space-y-40">
       {projects.map((project) => (
@@ -22,5 +22,3 @@ function ProjectList({ projects }: ProjectListProps) {
     </div>
   );
 }
-
-export default ProjectList;

@@ -1,8 +1,9 @@
 import { ArrowUpRightFromSquare, Code } from "lucide-react";
 import Image from "next/image";
 import { type Project as ProjectType } from "../types";
+import LinkButton from "./ui/LinkButton";
 
-function Project({
+export default function Project({
   name,
   techStack,
   imageSrc,
@@ -31,7 +32,7 @@ function Project({
       {/*PROJECT DESCRIPTION */}
       <div className="flex flex-col gap-6">
         <h3 className="text-2xl font-semibold text-stone-700">{name}</h3>
-        <div className="mb-2 flex max-w-xl flex-wrap items-center gap-2 text-stone-700">
+        <div className="mb-0 flex max-w-xl flex-wrap items-center gap-1.5 text-stone-700 sm:gap-2">
           {techStack.map((stack) => (
             <span
               className="rounded-full border-[1.5px] border-stone-300 bg-stone-50 px-3 py-2 text-sm font-medium"
@@ -42,29 +43,22 @@ function Project({
           ))}
         </div>
 
-        <p className="mb-2 max-w-2xl leading-9 text-stone-700">{description}</p>
+        <p className="mb-3 max-w-2xl text-sm leading-8 text-stone-700 sm:text-base sm:leading-9">
+          {description}
+        </p>
 
-        <div className="flex gap-6 text-base font-medium text-stone-700">
-          <a
-            className="flex items-center gap-1 rounded-2xl px-3 py-2 text-stone-700 transition-colors duration-200 hover:bg-gray-200 hover:text-black hover:shadow-sm"
-            target="_blank"
-            href={liveUrl}
-          >
+        <div className="flex gap-6 text-sm font-medium text-stone-700 sm:text-base">
+          <LinkButton url={liveUrl}>
             View project
             <ArrowUpRightFromSquare className="h-5" />
-          </a>
-          <a
-            className="flex items-center gap-1 rounded-2xl px-3 py-2 text-stone-700 transition-colors duration-200 hover:bg-gray-200 hover:text-black hover:shadow-sm"
-            target="_blank"
-            href={sourceCodeUrl}
-          >
+          </LinkButton>
+
+          <LinkButton url={sourceCodeUrl}>
             Source code
             <Code className="h-5" />
-          </a>
+          </LinkButton>
         </div>
       </div>
     </div>
   );
 }
-
-export default Project;

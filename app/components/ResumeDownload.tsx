@@ -4,7 +4,7 @@ type ResumeProps = {
   resumeUrl: string;
 };
 
-export default function Resume({ resumeUrl }: ResumeProps) {
+export default function ResumeDownload({ resumeUrl }: ResumeProps) {
   return (
     <a
       href={resumeUrl}

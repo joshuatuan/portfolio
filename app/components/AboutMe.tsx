@@ -1,6 +1,6 @@
-function AboutMe() {
+export default function AboutMe() {
   return (
-    <div className="max-w-2xl space-y-6 text-lg font-[450] leading-8">
+    <div className="max-w-2xl space-y-6 text-base font-[450] leading-8 md:text-lg">
       <p>
         I recently graduated from FEU Institute of Technology with a degree in
         Computer Science.
@@ -18,5 +18,3 @@ function AboutMe() {
     </div>
   );
 }
-
-export default AboutMe;

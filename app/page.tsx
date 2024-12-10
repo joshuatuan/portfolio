@@ -1,7 +1,7 @@
 import { createClient } from "@vercel/edge-config";
-import Footer from "./components/Footer";
-import InfoContainer from "./components/InfoContainer";
-import Intro from "./components/Intro";
+import Footer from "./components/ui/Footer";
+import PortfolioSections from "./components/PortfolioSections";
+import HeroSection from "./components/HeroSection";
 
 import { type Project, type Intro as IntroData } from "./types";
 
@@ -30,8 +30,8 @@ export default async function Page() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
-      <Intro introData={data.intro} />
-      <InfoContainer resumeUrl={data.resumeUrl} projects={data.projects} />
+      <HeroSection introData={data.intro} />
+      <PortfolioSections resumeUrl={data.resumeUrl} projects={data.projects} />
       <Footer />
     </main>
   );
